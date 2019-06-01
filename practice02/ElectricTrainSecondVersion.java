@@ -1,15 +1,15 @@
 package kz.epam.khassenov.practice02;
 
 public class ElectricTrainSecondVersion {
-    public static final double frictionCoefficient = 0.05;
-    public static final double carriageWeight = 10000;
-    public static final double accelerationOfGravity = 9.8;
-    public static final double kilo = 1000.0;
+    private static final double FRICTIONCOEFFICIENT = 0.05;
+    private static final double CARRIAGEWEIGHT = 10000;
+    private static final double ACCELERATIONOFGRAVITY = 9.8;
+    private static final int KILO = 1000;
     private static double tractionForce;
     private static int maxCarriageCount;
     private static int carriageDifferences;
     private int carriageCount;
-    private double trainWeight;
+    private double headTrainWeight;
     private double enginePower;
     private String name;
 
@@ -21,12 +21,12 @@ public class ElectricTrainSecondVersion {
         this.name = name;
     }
 
-    public double getTrainWeight() {
-        return trainWeight;
+    public double getHeadTrainWeight() {
+        return headTrainWeight;
     }
 
-    public void setTrainWeight(double trainWeight) {
-        this.trainWeight = trainWeight;
+    public void setTrainWeight(double headTrainWeight) {
+        this.headTrainWeight = headTrainWeight;
     }
 
     public double getEnginePower() {
@@ -40,17 +40,17 @@ public class ElectricTrainSecondVersion {
     public ElectricTrainSecondVersion() {
     }
 
-    public ElectricTrainSecondVersion(String name, double enginePower, double trainWeight, int carriageCount) {
+    public ElectricTrainSecondVersion(String name, double enginePower, double headTrainWeight, int carriageCount) {
         this.name = name;
         this.enginePower = enginePower;
-        this.trainWeight = trainWeight;
+        this.headTrainWeight = headTrainWeight;
         this.carriageCount = carriageCount;
     }
 
-    protected void move(){
-        tractionForce = frictionCoefficient * accelerationOfGravity * (trainWeight + (carriageCount * carriageWeight));
-        enginePower = enginePower * kilo;
-        maxCarriageCount = (int)Math.round(((enginePower/(frictionCoefficient * accelerationOfGravity)) - trainWeight) / carriageWeight);
+    protected void trainMovement(){
+        tractionForce = FRICTIONCOEFFICIENT * ACCELERATIONOFGRAVITY * (headTrainWeight + (carriageCount * CARRIAGEWEIGHT));
+        enginePower = enginePower * KILO;
+        maxCarriageCount = (int)Math.round(((enginePower/(FRICTIONCOEFFICIENT * ACCELERATIONOFGRAVITY)) - headTrainWeight) / CARRIAGEWEIGHT);
         carriageDifferences = ((int)Math.round(maxCarriageCount) - carriageCount);
         if ((tractionForce >= enginePower) && carriageDifferences != 0){
             System.out.println(name + " can't take " + carriageCount + " carriages. Yo have to detach: "
@@ -63,10 +63,5 @@ public class ElectricTrainSecondVersion {
         else {
             System.out.println("Great! " + name + " is ready.");
         }
-    }
-
-    public static void main(String[] args) {
-        ElectricTrainSecondVersion myTrain = new ElectricTrainSecondVersion("Electro520",520.0, 6000.0, 105);
-        myTrain.move();
     }
 }
