@@ -36,13 +36,12 @@ public class InternationalisationNumberFormatSample {
         {
             try{
             String numberGermany = "9.876,598";
-            String currencyGermany = "9.876,543";
             NumberFormat numberFormatGermany = NumberFormat.getNumberInstance(Locale.GERMANY);
             NumberFormat currencyFormatGermany = NumberFormat.getCurrencyInstance(Locale.GERMANY);
                 double doubleNumberGermany = (Double) numberFormatGermany.parse(numberGermany);
-                double doubleCurrencyGermany = (Double) currencyFormatGermany.parse(currencyGermany);
+                String stringCurrencyGermany = currencyFormatGermany.getCurrency().getCurrencyCode();
                 System.out.println(doubleNumberGermany);
-                System.out.println(doubleCurrencyGermany);
+                System.out.println(doubleNumberGermany + " " + stringCurrencyGermany);
             }
             catch (ParseException e){
                 e.printStackTrace();
