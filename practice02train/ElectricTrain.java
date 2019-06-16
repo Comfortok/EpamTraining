@@ -1,4 +1,4 @@
-package kz.epam.khassenov.practice02;
+package kz.epam.khassenov.practice02train;
 
 import java.io.BufferedReader;
 import java.io.IOException;

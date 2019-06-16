@@ -1,4 +1,4 @@
-package kz.epam.khassenov.practice02;
+package kz.epam.khassenov.practice02train;
 
 public class ElectricTrainSecondVersion {
     private static final double FRICTIONCOEFFICIENT = 0.05;

@@ -1,4 +1,4 @@
-package kz.epam.khassenov.practice02;
+package kz.epam.khassenov.practice02train;
 
 public class ElectricTrainSecondVersionMain {
     public static void main(String[] args) {
