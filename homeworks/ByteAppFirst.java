@@ -1,6 +1,5 @@
 package kz.epam.khassenov.homeworks;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class ByteAppFirst {
