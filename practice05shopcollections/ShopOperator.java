@@ -18,21 +18,19 @@ public class ShopOperator {
             customerList.add(new Customer(i));
         }
 
-        for (Customer customer : customerList){
-            System.out.println(customer);
-        }
-
         for (int i = 0; i < customerList.size(); i++){
             StringBuffer stringBuffer = new StringBuffer();
+            double totalSum = 0.0;
             for (int j = 0; j < goodsList.size(); j++){
                 int count = getRandomGoodsCount();
                 if (count != 0){
                     stringBuffer.append("\n" + (new Basket(goodsList.get(j), count)));
+                    totalSum = (totalSum + (goodsList.get(j).getPrice() * count));
                 }
                 else {
                 }
             }
-            basketList.add(String.valueOf(stringBuffer));
+            basketList.add(String.valueOf(stringBuffer) + "Grand Total: " + totalSum);
         }
 
         for (int i = 0; i < customerList.size(); i++){

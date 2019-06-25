@@ -20,8 +20,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
-                "ID=" + ID +
-                '}';
+        return "Customer ID " + ID + " ";
     }
 }

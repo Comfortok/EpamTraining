@@ -1,4 +1,4 @@
-package kz.epam.khassenov.practice01;
+package kz.epam.khassenov.practice01vehicle;
 
 public abstract class WaterVehicle extends Vehicle {
     protected double displacement;
