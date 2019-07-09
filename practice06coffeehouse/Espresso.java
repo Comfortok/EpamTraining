@@ -32,15 +32,15 @@ public class Espresso extends Coffee {
     public Espresso() {
     }
 
-    public Espresso(String name, String bean, double waterAmount, Addition salt, Addition sugar) {
-        super(name, bean, waterAmount);
+    public Espresso(String name, String bean, double waterAmount, double price, Addition salt, Addition sugar) {
+        super(name, bean, waterAmount, price);
         this.salt = salt;
         this.sugar = sugar;
     }
 
     @Override
     public String toString() {
-        return getName() + getCup().getSize() + ". Beans: " + getBean() +
-                ". Additions: " + getSugar() + topping;
+        return getName() + getCup().getSize() + ". Price: " + getPrice() + " KZT" + ". Beans: " + getBean() +
+                ". Additions: " + topping;
     }
 }

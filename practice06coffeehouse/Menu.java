@@ -16,18 +16,22 @@ public class Menu {
     }
 
     public void showSugar(){
-        System.out.println("Please, choose the sugar amount.");
+        System.out.println("Please, choose the sugar amount (grams).");
         System.out.println("10");
         System.out.println("20");
         System.out.println("30");
         System.out.println("40");
+        System.out.println("50");
     }
 
     public void showTopping(){
         System.out.println("Please, choose the toppings.");
         System.out.println("1.\tCinnamon.");
         System.out.println("2.\tSyrup.");
-        System.out.println("3.\tNo toppings.");
+        System.out.println("3.\tIce-cream.");
+        System.out.println("4.\tMarshmello.");
+        System.out.println("5.\tChocolate.");
+        System.out.println("6.\tNo toppings.");
     }
 
     public void showCup(){

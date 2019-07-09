@@ -5,6 +5,7 @@ public class Coffee {
     private String bean;
     private double waterAmount;
     private Cup cup;
+    private double price;
 
     public String getName() {
         return name;
@@ -38,12 +39,21 @@ public class Coffee {
         this.cup = cup;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public Coffee() {
     }
 
-    public Coffee(String name, String bean, double waterAmount) {
+    public Coffee(String name, String bean, double waterAmount, double price) {
         this.name = name;
         this.bean = bean;
         this.waterAmount = waterAmount;
+        this.price = price;
     }
 }

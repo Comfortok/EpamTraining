@@ -23,8 +23,9 @@ public class Cappucino extends Espresso{
     public Cappucino() {
     }
 
-    public Cappucino(String name, String bean, double waterAmount, Addition salt, Addition sugar, Addition milk, Addition wippedMilk) {
-        super(name, bean, waterAmount, salt, sugar);
+    public Cappucino(String name, String bean, double waterAmount,
+                     double price, Addition salt, Addition sugar, Addition milk, Addition wippedMilk) {
+        super(name, bean, waterAmount, price, salt, sugar);
         this.milk = milk;
         this.wippedMilk = wippedMilk;
     }
