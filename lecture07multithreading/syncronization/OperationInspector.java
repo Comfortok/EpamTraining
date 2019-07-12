@@ -1,4 +1,4 @@
-package kz.epam.khassenov.lecture07multithreading;
+package kz.epam.khassenov.lecture07multithreading.syncronization;
 
 import kz.epam.khassenov.lecture07multithreading.syncronization.Account;
 import kz.epam.khassenov.lecture07multithreading.syncronization.OperatorDeposit;

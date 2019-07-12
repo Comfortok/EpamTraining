@@ -1,4 +1,4 @@
-package kz.epam.khassenov.lecture07multithreading;
+package kz.epam.khassenov.lecture07multithreading.suspendresumesleep;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

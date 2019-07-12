@@ -1,4 +1,4 @@
-package kz.epam.khassenov.lecture07multithreading;
+package kz.epam.khassenov.lecture07multithreading.exception;
 
 public class MyThreadTwo implements Runnable {
     @Override

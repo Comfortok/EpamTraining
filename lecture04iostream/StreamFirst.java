@@ -1,4 +1,4 @@
-package kz.epam.khassenov.lecture04;
+package kz.epam.khassenov.lecture04iostream;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package kz.epam.khassenov.lecture07multithreading;
+package kz.epam.khassenov.lecture07multithreading.priority;
 
 public class Clicker extends Thread {
     int click = 0;

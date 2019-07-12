@@ -1,4 +1,4 @@
-package kz.epam.khassenov.lecture07multithreading.threadgroup;
+package kz.epam.khassenov.lecture07multithreading.exception;
 
 public class NewThreadGroup extends ThreadGroup {
     public NewThreadGroup(String name) {

@@ -1,4 +1,4 @@
-package kz.epam.khassenov.lecture07multithreading;
+package kz.epam.khassenov.lecture07multithreading.threadsamples;
 
 public class Talk extends Thread{
     public void run(){

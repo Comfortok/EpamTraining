@@ -1,4 +1,4 @@
-package kz.epam.khassenov.lecture07multithreading;
+package kz.epam.khassenov.lecture07multithreading.threadsamples;
 
 import kz.epam.khassenov.lecture07multithreading.threadsamples.NewThread;
 import kz.epam.khassenov.lecture07multithreading.threadsamples.Talk;
