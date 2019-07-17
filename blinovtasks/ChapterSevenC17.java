@@ -12,8 +12,9 @@ public class ChapterSevenC17 {
         try (BufferedReader bufferedReader = new BufferedReader(
                 new InputStreamReader(System.in))){
             String inputString = bufferedReader.readLine();
+            String patternW = "\\W+";
             String patternFirst = "\\s+|,\\s*";
-            Pattern patternSecond = Pattern.compile("\\W+");
+            Pattern patternSecond = Pattern.compile(patternW);
             String[] unsortedArray = inputString.split(patternFirst);
             ArrayList<String> preResultArray = new ArrayList<>();
             for (int i = 0; i < unsortedArray.length; i++){
